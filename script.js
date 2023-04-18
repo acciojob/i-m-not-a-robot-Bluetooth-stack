@@ -72,16 +72,17 @@ addLintener();
 // add event-listener to verify button
 function verified(selected){
     let allClass = ['img1', 'img2', 'img3', 'img4', 'img5'];
+    let bool = true;
     verify.addEventListener("click", ()=>{
         console.log("verify");
         console.log(selected);
         verify.style.display = "none"
-        let bool;
         for(let k = 0; k<allClass.length; k++){
             if(selected[0].classList.contains(allClass[k]) && selected[1].classList.contains(allClass[k])){
                 console.log("same");
                 para.textContent = "You are a human. Congratulations!";
                 bool = true
+				break;
             }
             else{
                 bool = false;
