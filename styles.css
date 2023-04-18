@@ -9,6 +9,7 @@ body{
 
 .img-container{
     display: flex;
+	flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 95%;
@@ -20,6 +21,7 @@ body{
     width: 150px;
     border:  8px solid  rgb(119, 119, 119);
     cursor: pointer;
+	margin: 5px 2px;
 }
 
 .img-active{
@@ -38,6 +40,6 @@ body{
     margin: 0 8px;
 }
 
-#reset, #verify{
+#reset, #btn{
     display: none;
 }

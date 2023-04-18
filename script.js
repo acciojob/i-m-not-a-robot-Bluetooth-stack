@@ -2,7 +2,7 @@
 //selected required elements 
 const imgContainer = document.querySelector('.img-container');
 const reset = document.querySelector("#reset")
-const verify = document.querySelector("#verify")
+const verify = document.querySelector("#btn")
 let images = document.querySelectorAll('img');
 let para = document.querySelector("#para");
 
